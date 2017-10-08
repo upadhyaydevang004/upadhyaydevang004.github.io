@@ -52,7 +52,7 @@
     <!-- Header -->
     <header class="masthead">
       <div class="container">
-        <img class="img-fluid" src="img/profile.png" alt="">
+        <a shape="circle"><img class="img-fluid" src="img/profile.jpg" alt="" ></a>
         <div class="intro-text">
           <span class="name"><i>DEVANG UPADHYAY</i></span>
           <hr class="star-light">
@@ -61,7 +61,7 @@
     </header>
 
     
-    <!-- Portfolio Grid Section -->
+    <!-- Portfolio Grid Section --> 
     <section id="portfolio">
       <div class="container">
         <h2 class="text-center">Portfolio</h2>
@@ -71,17 +71,27 @@
             <a class="portfolio-link" href="#portfolioModal1" data-toggle="modal">
               <div class="caption">
                 <div class="caption-content">
-                  <i class="fa fa-search-plus fa-3x"></i>
+                  <i class="">Educational Qualifications</i>
                 </div>
               </div>
               <img class="img-fluid" src="img/portfolio/eq.png" alt="">
             </a>
           </div>
           <div class="col-sm-4 portfolio-item">
+            <a class="portfolio-link" href="#portfolioModal4" data-toggle="modal">
+              <div class="caption">
+                <div class="caption-content">
+                  <i class="">Skills & Strengths</i>
+                </div>
+              </div>
+              <img class="img-fluid" src="img/portfolio/ss.png" alt="">
+            </a>
+          </div>
+          <div class="col-sm-4 portfolio-item">
             <a class="portfolio-link" href="#portfolioModal2" data-toggle="modal">
               <div class="caption">
                 <div class="caption-content">
-                  <i class="fa fa-search-plus fa-3x"></i>
+                  <i class="">Internships/ Training</i>
                 </div>
               </div>
               <img class="img-fluid" src="img/portfolio/it.png" alt="">
@@ -91,27 +101,17 @@
             <a class="portfolio-link" href="#portfolioModal3" data-toggle="modal">
               <div class="caption">
                 <div class="caption-content">
-                  <i class="fa fa-search-plus fa-3x"></i>
+                  <i class="">Activities</i>
                 </div>
               </div>
               <img class="img-fluid" src="img/portfolio/acti.png" alt="">
             </a>
           </div>
           <div class="col-sm-4 portfolio-item">
-            <a class="portfolio-link" href="#portfolioModal4" data-toggle="modal">
-              <div class="caption">
-                <div class="caption-content">
-                  <i class="fa fa-search-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="img/portfolio/ss.png" alt="">
-            </a>
-          </div>
-          <div class="col-sm-4 portfolio-item">
             <a class="portfolio-link" href="#portfolioModal5" data-toggle="modal">
               <div class="caption">
                 <div class="caption-content">
-                  <i class="fa fa-search-plus fa-3x"></i>
+                  <i class="">Projects & Achievements</i>
                 </div>
               </div>
               <img class="img-fluid" src="img/portfolio/pa.png" alt="">
@@ -121,7 +121,7 @@
             <a class="portfolio-link" href="#portfolioModal6" data-toggle="modal">
               <div class="caption">
                 <div class="caption-content">
-                  <i class="fa fa-search-plus fa-3x"></i>
+                  <i class="">Hobbies</i>
                 </div>
               </div>
               <img class="img-fluid" src="img/portfolio/hobby.png" alt="">
@@ -281,7 +281,7 @@
                   <h2>EDUCATIONAL QUALIFICATIONS</h2>
                   <hr class="star-primary">
                   <img class="img-fluid img-centered" src="img/portfolio/eq.png" alt="">
-                  <p>
+                  <p align="left">
                   	<ul>
                   		<b>SRM (Sri Ramaswamy Memorial) University</b><br>
                   		Bachelor of Technology in Software Engineering, <b>CGPA: 9.354/10</b>
@@ -307,6 +307,53 @@
         </div>
       </div>
     </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <h2>SKILLS and STRENGTH</h2>
+                  <hr class="star-primary">
+                  <img class="img-fluid img-centered" src="img/portfolio/ss.png" alt="">
+                  <p align="left">
+                  	
+                  		<b>TECHNICAL SKILLS-</b> C, C++, Basic Java, Web Designing and Development, JavaScript, Python, MATLAB, Basic Android
+                  	</p>
+                  	<p align="left">
+                  		<b>GENERAL SKILLS-</b>Problem Solving and Aptitude, Logical Reasoning
+                  	
+                  </p><br>
+                  <p align="left">
+                  	
+                  		<b>STRENGTHS</b><br>
+                  		•	Leadership quality as well as ability to work as a team member.<br>
+						•	Ability to teach concepts I am robust in. <br>
+						•	Effective communication skills.<br>
+						•	Ability to handle multiple tasks and work under pressure.<br>
+						•	Can adapt to a stressful situation.<br> 
+						•	Positive thinking, commitment and confidence.<br>
+
+                  	
+                  </p>
+                  
+                  <button class="btn btn-success" type="button" data-dismiss="modal">
+                    <i class="fa fa-times"></i>
+                    Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
     <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -361,71 +408,25 @@
                   <h2>ACTIVITIES</h2>
                   <hr class="star-primary">
                   <img class="img-fluid img-centered" src="img/portfolio/acti.png" alt="">
-                  <p>
-                  	<ul>
+                  <p align="left">
+                  	
                   		<b>EXTRA-CURRICULAR ACTIVITIES</b><br>
                   			•	Was a Committee Head in Aaruush ’16 (College Fest) and played an important role in organizing the fest for three consecutive years.<br>
                   			•	Participated in Dramas and Plays at school and college level.<br>
                   			•	Represented school in various inter school Quiz competitions (2009-12).<br>
                   			•	Represented school in many sports events of Tennis, Table Tennis and Football (2009-12).<br>
                   			•	Participated in various Table Tennis tournaments at different levels.
-                  	</ul><br><br>
-                  	<ul>
+                  	</p><br><br>
+                  	<p align="left">
                   		<b>CO-CURRICULAR ACTIVITIES</b><br>
                   		•	Have completed a course in C++ (Object Oriented Programming) from NIIT.<br>
 						•	Participated in SRMMUN and represented Zimbabwe to join the discussion in the council UNGA SPECPOL among the delegates of various countries in the year 2016.<br>
 						•	Was a member of the Software Engineering Association for two years under the technical domain.<br>
 						•	Was a member of the organizing team of SRMKZILLA (departmental club).<br>
 
-                  	</ul>
+                  	
                   </p>
                   <br>
-                  <button class="btn btn-success" type="button" data-dismiss="modal">
-                    <i class="fa fa-times"></i>
-                    Close</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-              <div class="rl"></div>
-            </div>
-          </div>
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-8 mx-auto">
-                <div class="modal-body">
-                  <h2>SKILLS and STRENGTH</h2>
-                  <hr class="star-primary">
-                  <img class="img-fluid img-centered" src="img/portfolio/ss.png" alt="">
-                  <p>
-                  	<ul>
-                  		<b>TECHNICAL SKILLS-</b> C, C++, Basic Java, Web Designing and Development, JavaScript, Python, MATLAB, Basic Android
-                  	</ul>
-                  	<ul>
-                  		<b>GENERAL SKILLS-</b>Problem Solving and Aptitude, Logical Reasoning
-                  	</ul>
-                  </p><br>
-                  <p>
-                  	<ul>
-                  		<b>STRENGTHS</b><br>
-                  		•	Leadership quality as well as ability to work as a team member.<br>
-						•	Ability to teach concepts I am robust in. <br>
-						•	Effective communication skills.<br>
-						•	Ability to handle multiple tasks and work under pressure.<br>
-						•	Can adapt to a stressful situation.<br> 
-						•	Positive thinking, commitment and confidence.<br>
-
-                  	</ul>
-                  </p>
-                  
                   <button class="btn btn-success" type="button" data-dismiss="modal">
                     <i class="fa fa-times"></i>
                     Close</button>
@@ -451,21 +452,21 @@
                   <h2>PROJECTS and ACHIEVEMENTS</h2>
                   <hr class="star-primary">
                   <img class="img-fluid img-centered" src="img/portfolio/pa.png" alt="">
-                  <p>
-                  	<ul>
+                  <p align="left">
+                  	
                   		<b>PROJECTS</b><br>
                   		•	Developed a website for the Gujarati community of Mumbai to display information such as photographs, events, and circulars.<br>
 						URL: <u>www.modhchaturvediyamumbaigyati.com</u><br>						
 						•	Designed and documented a Student Portal based on the Software department of my university. This portal shows attendance, timetable, displayed announcements and events carried out in the department, etc.
 
-                  	</ul><br>
-                  	<ul>
+                  	</p><br>
+                  	<p align="left">
                   		<b>ACHIEVEMENTS</b><br>
                   		•	Won the Best Leader Award in a 3-day camp organized at a school level.<br>
 						•	Was offered a scholarship from the Maharashtra Government on the basis of my HSC (+2) results, since I was in the top 1% of the HSC Board.<br>
 						•	Was the Runner-Up in Table Tennis Competition held at college (2015).<br> 
 
-                  	</ul>
+                  	
                   </p>
                   <br>
                   <button class="btn btn-success" type="button" data-dismiss="modal">
@@ -493,15 +494,15 @@
                   <h2>HOBBIES</h2>
                   <hr class="star-primary">
                   <img class="img-fluid img-centered" src="img/portfolio/hobby.png" alt="">
-                  <p>
-                  	<ul>
+                  <p align="left">
+                  	
                   		<b>HOBBIES</b><br>
                   		•	Teaching various concepts especially problem solving and aptitude. I also carried out placement training for senior year for the duration of 3 weeks.<br>
 						•	Playing indoor games like table tennis and chess as well as outdoor games like football and cricket.<br>
 						•	Travelling to explore new things around.<br>
 						•	Participating in public speaking and debate competitions.<br>
 
-                  	</ul>
+                  	
                   </p>
                     <button class="btn btn-success" type="button" data-dismiss="modal">
                     <i class="fa fa-times"></i>
