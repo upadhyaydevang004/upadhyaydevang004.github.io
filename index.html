@@ -160,8 +160,41 @@
         <hr class="star-primary">
         <div class="row">
           <div class="col-lg-8 mx-auto">
+            <?php
+//if "email" variable is filled out, send email
+  if (isset($_REQUEST['email']))  {
+  
+  //Email information
+  $admin_email = "upadhyaydevang004@gmail.com";
+  $email = $_REQUEST['email'];
+  $subject = $_REQUEST['subject'];
+  $comment = $_REQUEST['comment'];
+  
+  //send email
+  mail($admin_email, "$subject", $comment, "From:" . $email);
+  
+  //Email response
+  echo "Thank you for contacting us!";
+  }
+  
+  //if "email" variable is not filled out, display the form
+  else  {
+?>
+
+ <form method="post">
+  Email: <input name="email" type="text" /><br />
+  Subject: <input name="subject" type="text" /><br />
+  Message:<br />
+  <textarea name="comment" rows="15" cols="40"></textarea><br />
+  <input type="submit" value="Submit" />
+  </form>
+  
+<?php
+  }
+?>
             <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
-            <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
+            <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. 
+
             <form name="sentMessage" id="contactForm" novalidate>
               <div class="control-group">
                 <div class="form-group floating-label-form-group controls">
@@ -196,7 +229,7 @@
               <div class="form-group">
                 <button type="submit" class="btn btn-success btn-lg" id="sendMessageButton">Send</button>
               </div>
-            </form>
+            </form>-->
           </div>
         </div>
       </div>
